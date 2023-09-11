@@ -1,12 +1,36 @@
 html, body {
   height: 100%;
   width: 100%;
+  background-color: rgba(35, 57, 77, 0.97);
 }
 
 /* La tipografia default */
 body {
-  /* font-family: sans-serif; */
-  background-color: #6e6875;
+  background-image: url("media/fondo2.png");
+  background-size: cover; /* Ajusta la imagen al tamaño de la ventana */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  position: absolute; /* Establece la posición como absoluta */
+  top: 0; /* Alinea la parte superior con el borde superior de la ventana */
+  left: 0; /* Alinea la izquierda con el borde izquierdo de la ventana */
+  width: 100%; /* Ocupa todo el ancho de la ventana */
+  height: 100%; /* Ocupa toda la altura de la ventana */
+}
+.fondo{
+  position: fixed;
+  align-items: center;
+}
+.logo{
+  position: relative;
+  margin-top: 36%;
+  width: 35%;
+  margin-left: 6%;
+}
+.bandera{
+  width: 100%;
+  height: 50%;
+  
+  position: relative;
+  margin-top: -50%;
 }
 
 /* Contenedor de los slides */
@@ -71,11 +95,11 @@ body {
   transform: translateX(55%) translateY(-45%) rotate(-135deg);
 }
 /* Fin botones */
-
+/*
 h1 {
   text-align: center;
 }
-
+*/
 .bajada {
   font-size: 22px;
 }
@@ -88,22 +112,21 @@ p {
 #videoApertura {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  right: 100px;
+  width: 40%;
+  height: 70%;
   object-fit: cover;
-  object-position: top;
+  
 }
-
+/*
 #headerApertura {
   position: absolute;
   top: 50px;
   left: 50px;
-  background-color: #f6d500;
   padding: 5px 15px;
   width: 420px;
 }
-
+*/
 #headerApertura h1 {
   font-weight: 700;
   margin-bottom: 20px;
