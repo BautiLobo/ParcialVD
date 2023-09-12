@@ -1,7 +1,15 @@
 html, body {
   height: 100%;
   width: 100%;
-  background-color: rgba(35, 57, 77, 0.97);
+  background-color: rgba(51, 61, 77, 0.97);
+  background-image: url("media/fondo2.png");
+  background-size: cover; /* Ajusta la imagen al tamaño de la ventana */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  position: absolute; /* Establece la posición como absoluta */
+  top: 0; /* Alinea la parte superior con el borde superior de la ventana */
+  left: 0; /* Alinea la izquierda con el borde izquierdo de la ventana */
+  width: 100%; /* Ocupa todo el ancho de la ventana */
+  height: 100%; /* Ocupa toda la altura de la ventana */
 }
 
 /* La tipografia default */
@@ -28,7 +36,6 @@ body {
 .bandera{
   width: 100%;
   height: 50%;
-  
   position: relative;
   margin-top: -50%;
 }
@@ -95,50 +102,69 @@ body {
   transform: translateX(55%) translateY(-45%) rotate(-135deg);
 }
 /* Fin botones */
-/*
-h1 {
-  text-align: center;
-}
-*/
-.bajada {
-  font-size: 22px;
-}
-p {
-  text-align: center;
-}
-
-
 /* Apertura: positioning */
-#videoApertura {
-  position: absolute;
-  top: 0;
-  right: 100px;
-  width: 40%;
-  height: 70%;
-  object-fit: cover;
-  
+
+.ciudad{
+position: relative;
+margin-left: -28%;
+margin-top: 18%;
 }
-/*
+.Milei{
+  position: relative;
+  width: 65%;
+  height: 50%;
+  margin-top: 70%;
+  margin-left: 140%;
+}
+.barras{
+ position: relative;
+ height: 100%;
+ width: 40%;
+ margin-left: -25%;
+ margin-top: -30% ;
+}
 #headerApertura {
   position: absolute;
-  top: 50px;
-  left: 50px;
+  margin-top: 37%;
+  margin-left: 55%;
   padding: 5px 15px;
   width: 420px;
+  text-align: right;
 }
-*/
+
 #headerApertura h1 {
+  color: Black;
+  font-size: 60px;
   font-weight: 700;
+  font-family: "PT Sans Demi",sans-serif;
   margin-bottom: 20px;
-  text-align: left;
+  width: 140%;
+
   margin: 0;
 }
 #headerApertura p {
-  text-align: left;
-  font-size: 20px;
+  width: 140%;
+  font-size: 32px;
+  font-family: "PT Book", sans-serif; /* Fuente "PT Sans" con respaldo sans-serif en caso de que no esté disponible */
+  font-style: oblique; /* Aplica el estilo oblicuo (cursiva) */
+  color: black;
+ font-weight: 500;
 
 }
-
+header{
+  position: relative;
+  width: 30%;
+  margin-left: 60%;
+  margin-top: 5%;
+  color: white;
+}
+.bajada{
+  position: relative;
+  width: 30%;
+  margin-left: 60%;
+  margin-top: 10%;
+  color: white;
+}
 /* Slide 1: uso de grid */
 #slide1 {
   display: grid;
@@ -171,7 +197,7 @@ p {
 }
 
 #slide2 .header {
-  /* margin: 40px 0; */
+   margin: 40px 0; 
 }
 
 #slide2 .barras {
