@@ -1,10 +1,11 @@
+
 html, body {
   height: 100%;
   width: 100%;
   background-color: rgba(51, 61, 77, 0.97);
   background-image: url("media/fondo2.png");
   background-size: cover; /* Ajusta la imagen al tamaño de la ventana */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-repeat: repeat; /* Evita que la imagen se repita */
   position: absolute; /* Establece la posición como absoluta */
   top: 0; /* Alinea la parte superior con el borde superior de la ventana */
   left: 0; /* Alinea la izquierda con el borde izquierdo de la ventana */
@@ -16,7 +17,7 @@ html, body {
 body {
   background-image: url("media/fondo2.png");
   background-size: cover; /* Ajusta la imagen al tamaño de la ventana */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-repeat: repeat; /* Evita que la imagen se repita */
   position: absolute; /* Establece la posición como absoluta */
   top: 0; /* Alinea la parte superior con el borde superior de la ventana */
   left: 0; /* Alinea la izquierda con el borde izquierdo de la ventana */
@@ -40,7 +41,6 @@ body {
   margin-top: -50%;
 }
 
-/* Contenedor de los slides */
 .container {
   position: absolute;
   top: 0;
@@ -116,13 +116,7 @@ margin-top: 18%;
   margin-top: 70%;
   margin-left: 140%;
 }
-.barras{
- position: relative;
- height: 100%;
- width: 40%;
- margin-left: -25%;
- margin-top: -30% ;
-}
+
 #headerApertura {
   position: absolute;
   margin-top: 37%;
@@ -148,24 +142,18 @@ margin-top: 18%;
   font-family: "PT Book", sans-serif; /* Fuente "PT Sans" con respaldo sans-serif en caso de que no esté disponible */
   font-style: oblique; /* Aplica el estilo oblicuo (cursiva) */
   color: black;
- font-weight: 500;
+  font-weight: 500;
 
 }
-header{
-  position: relative;
-  width: 30%;
-  margin-left: 60%;
-  margin-top: 5%;
-  color: white;
-}
-.bajada{
+
+
+/*  margin: 1rem 0;
+  text-align: center;
   position: relative;
   width: 30%;
   margin-left: 60%;
   margin-top: 10%;
-  color: white;
-}
-/* Slide 1: uso de grid */
+  color: white;Slide 1: uso de grid */
 #slide1 {
   display: grid;
   width: 100%;
@@ -187,19 +175,83 @@ header{
   max-width: 460px;
 }
 
-/* Slide 1: uso de flex */
+ 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
 
-#slide2 {
+.contenido {
+  display: flex;
+  align-items: center;
+}
+
+.imagen {
+  flex: 1;
+  text-align: center;
+
+}
+
+.imagen img {
+  max-width: 100%;
+  height: 50%;
+}
+
+.texto {
+  flex: 1;
+  text-align: left;
+  width: 80px;
+  font-weight: 700;
+  font-size: large;
+  color:white;
+}
+.titulo {
+  font-size: 30px; /* Tamaño del título */
+  font-weight: bold; /* Negrita del título */
+  color:white;
+  
+}
+
+
+.texto2 {
+  flex: 1;
+  text-align: left;
+  width: 80px;
+  font-weight: 700;
+  font-size: large;
+  color:white;
+}
+.titulo2 {
+  font-size: 30px; /* Tamaño del título */
+  font-weight: bold; /* Negrita del título */
+  color:white;
+  
+}
+.barras{
+margin-left: 31%;
+width: 40%;
+
+}
+#contenedor2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* align-self: center; */
+  justify-content: center;
+  height: 100vh;
+  margin-top: -10%;
 }
+#contenedor2 h1{
+color: white;
+font-size: larger;
 
-#slide2 .header {
-   margin: 40px 0; 
 }
-
-#slide2 .barras {
-  max-width: 800px;
+#contenedor2 p{
+  color: white;
+}
+#imagen2 {
+  max-width: 100%;
+  max-height: 70vh;
 }

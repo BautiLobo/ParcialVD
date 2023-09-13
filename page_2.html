@@ -15,29 +15,35 @@
     <script src="https://unpkg.com/@barba/core"></script>
     <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
     <script src="js/main.js"></script>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Página con Imagen y Texto</title>
+      
   </head>
-
-  <body data-barba="wrapper">
-    <div class="container" data-barba="container" data-barba-namespace="home">
-      <div id="slide2">
-        <!-- Titulo y bajada -->
-        <div class="header">
-          <h1>La Campana electoral de Javier Milei</h1>
-          <p class="bajada">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
-veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-aliquip ex ea commodo consequat. Duis Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-aliquip ex ea commodo consequat. Duis  
-          </p>
-        </div>
-
-        <!-- Visualizacion DW -->
-        <img class="barras" src="media/voto.png" alt="" />
-      </div>
-
+  <body>
+      <div class="contenido">
+          <div class="imagen">
+              <img src="media/voto.png" alt="Imagen">
+          </div>
+          <div class="texto">
+            <h1 class="titulo">La campana electoral de Javier Milei</h1>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat
+                volutpat. Ut wisi enim ad minim
+                veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut
+                aliquip ex ea commodo consequat.
+                Duis Lorem ipsum dolor sit amet,
+                consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                erat volutpat. Ut wisi enim ad minim
+                veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut
+                aliquip ex ea commodo consequat.
+                Du</p>
+          </div>
       <!-- Botones -->
       <a id="prev_btn" class="prevBtn" href="page_1.html">
         <div class="flecha izq"></div>
