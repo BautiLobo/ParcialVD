@@ -32,7 +32,7 @@ body {
   background-image: url("media/fondo2.png");
   background-size: cover; /* Ajusta la imagen al tamaño de la ventana */
   background-repeat: repeat; /* Evita que la imagen se repita */
-  position: fixed; /* Establece la posición como absoluta */
+  position: static; /* Establece la posición como absoluta */
   top: 0; /* Alinea la parte superior con el borde superior de la ventana */
   left: 0; /* Alinea la izquierda con el borde izquierdo de la ventana */
   width: 100%; /* Ocupa todo el ancho de la ventana */
@@ -286,4 +286,15 @@ font-size: large;
 }
 #contenedor3 p{
   color: white;
+}
+
+.estructura {
+  display: flex; /* Utilizamos flexbox para crear la estructura de columnas */
+}
+
+.columna {
+  flex: 1; /* Distribuye el espacio de manera igual entre las columnas */
+  padding: 10px; /* Agrega un espacio interior para separar el contenido de las columnas */
+  
+  text-align: center; /* Centra el contenido dentro de las columnas */
 }
