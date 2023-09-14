@@ -28,17 +28,28 @@ body {
   position: fixed;
   align-items: center;
 }
+.fondo2{
+  background-image: url("media/fondo2.png");
+  background-size: cover; /* Ajusta la imagen al tamaño de la ventana */
+  background-repeat: repeat; /* Evita que la imagen se repita */
+  position: fixed; /* Establece la posición como absoluta */
+  top: 0; /* Alinea la parte superior con el borde superior de la ventana */
+  left: 0; /* Alinea la izquierda con el borde izquierdo de la ventana */
+  width: 100%; /* Ocupa todo el ancho de la ventana */
+  height: 100%; /* Ocupa toda la altura de la ventana */
+}
 .logo{
   position: relative;
-  margin-top: 36%;
-  width: 35%;
+  top: 51%;
+  width: 500px;
   margin-left: 6%;
 }
 .bandera{
   width: 100%;
-  height: 50%;
-  position: relative;
-  margin-top: -50%;
+  height: 6%;
+  position: absolute;
+  top: 20px;
+  left: 0;
 }
 
 .container {
@@ -108,13 +119,14 @@ body {
 position: relative;
 margin-left: -28%;
 margin-top: 18%;
+width: 90%;
 }
 .Milei{
   position: relative;
-  width: 65%;
-  height: 50%;
-  margin-top: 70%;
-  margin-left: 140%;
+  width: 24%;
+  height: 280px;
+  top: 61%;
+  left: 60%;
 }
 
 #headerApertura {
@@ -127,7 +139,7 @@ margin-top: 18%;
 }
 
 #headerApertura h1 {
-  color: Black;
+  color:white;
   font-size: 60px;
   font-weight: 700;
   font-family: "PT Sans Demi",sans-serif;
@@ -141,26 +153,17 @@ margin-top: 18%;
   font-size: 32px;
   font-family: "PT Book", sans-serif; /* Fuente "PT Sans" con respaldo sans-serif en caso de que no esté disponible */
   font-style: oblique; /* Aplica el estilo oblicuo (cursiva) */
-  color: black;
+  color:white;
   font-weight: 500;
 
 }
 
-
-/*  margin: 1rem 0;
-  text-align: center;
-  position: relative;
-  width: 30%;
-  margin-left: 60%;
-  margin-top: 10%;
-  color: white;Slide 1: uso de grid */
 #slide1 {
   display: grid;
   width: 100%;
   max-width: 1300px;
-  margin: auto;
   position: relative;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr,1fr;
 }
 
 #slide1 .header {
@@ -170,10 +173,13 @@ margin-top: 18%;
 }
 
 #slide1 .dwMap {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 460px;
+  position:absolute;
+  top: 200px;
+  left: 400px;
+  width: 500px;
+  height: 500px;
 }
+
 
  
 body {
@@ -232,7 +238,7 @@ body {
 }
 .barras{
 margin-left: 31%;
-width: 40%;
+width: 36%;
 
 }
 #contenedor2 {
@@ -245,7 +251,7 @@ width: 40%;
 }
 #contenedor2 h1{
 color: white;
-font-size: larger;
+font-size: large;
 
 }
 #contenedor2 p{
@@ -254,4 +260,30 @@ font-size: larger;
 #imagen2 {
   max-width: 100%;
   max-height: 70vh;
+}
+#videoApertura {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+}
+#contenedor3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-top: -10%;
+}
+#contenedor3 h1{
+  position:absolute;
+color: white;
+font-size: large;
+
+}
+#contenedor3 p{
+  color: white;
 }
