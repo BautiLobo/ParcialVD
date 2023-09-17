@@ -125,14 +125,14 @@ width: 90%;
   position: relative;
   width: 24%;
   height: 280px;
-  top: 61%;
+  top: 0px;
   left: 60%;
 }
 
 #headerApertura {
   position: absolute;
   margin-top: 37%;
-  margin-left: 55%;
+  margin-left: 52%;
   padding: 5px 15px;
   width: 420px;
   text-align: right;
@@ -179,9 +179,6 @@ width: 90%;
   width: 500px;
   height: 500px;
 }
-
-
- 
 body {
   display: flex;
   justify-content: center;
@@ -199,6 +196,13 @@ body {
   flex: 1;
   text-align: center;
 
+}
+
+#grafico{
+  height: 40%;
+  width: 40%;
+  margin-bottom: 30%;
+  margin-right: 2%;
 }
 
 .imagen img {
@@ -236,22 +240,17 @@ body {
   color:white;
   
 }
-.barras{
-margin-left: 31%;
-width: 36%;
-
-}
 #contenedor2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  margin-top: -10%;
+  height: 20vh;
+  margin-top: -12%;
 }
 #contenedor2 h1{
 color: white;
-font-size: large;
+font-size: x-large;
 
 }
 #contenedor2 p{
@@ -292,9 +291,68 @@ font-size: large;
   display: flex; /* Utilizamos flexbox para crear la estructura de columnas */
 }
 
-.columna {
+.columna   {
   flex: 1; /* Distribuye el espacio de manera igual entre las columnas */
   padding: 10px; /* Agrega un espacio interior para separar el contenido de las columnas */
-  
+  margin-top: 250px;
   text-align: center; /* Centra el contenido dentro de las columnas */
+}
+.columna p{
+  margin-left: 120px;
+  font-weight: 600;
+}
+.columna2   {
+  flex: 1; /* Distribuye el espacio de manera igual entre las columnas */
+  padding: 10px; /* Agrega un espacio interior para separar el contenido de las columnas */
+  margin-top: -20px;
+  margin-left: 50px;
+  text-align: center; /* Centra el contenido dentro de las columnas */
+}
+.columna2 h1{
+  top: 60px;
+  font-weight: 700;
+}
+.columna3  {
+  flex: 1; /* Distribuye el espacio de manera igual entre las columnas */
+  padding: 10px; /* Agrega un espacio interior para separar el contenido de las columnas */
+  margin-top: 260px;
+  margin-left: 0px;
+  text-align: center; /* Centra el contenido dentro de las columnas */
+}
+.columna3 p{
+  margin-right: 125px;
+  font-weight: 600;
+}
+
+.estructura h1{
+color: white;
+font-size: larger;
+}
+.estructura p{
+  color: white;
+}
+
+.dwMapp{
+  margin-top: 250px;
+  width: 600px;
+  margin-left: 27%;
+}
+#Paid{
+margin-top: 400px;
+width: 300px;
+margin-left:200px ;
+}
+.contenedor4{
+  margin-top: 10%;
+  top: 20px;
+}
+#barras{
+  width: 50%;
+  height: 10%;
+  margin-right: 2%;
+  margin-top: -44%;
+}
+.container .dwMapp{
+  margin-top: 250px;
+
 }
