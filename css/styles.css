@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 html, body {
   height: 100%;
   width: 100%;
@@ -11,6 +11,7 @@ html, body {
   left: 0; /* Alinea la izquierda con el borde izquierdo de la ventana */
   width: 100%; /* Ocupa todo el ancho de la ventana */
   height: 100%; /* Ocupa toda la altura de la ventana */
+  font-family: 'League Spartan', sans-serif;
 }
 
 /* La tipografia default */
@@ -40,9 +41,9 @@ body {
 }
 .logo{
   position: relative;
-  top: 51%;
+  top: 25%;
   width: 500px;
-  margin-left: 6%;
+  left: -26%;
 }
 .bandera{
   width: 100%;
@@ -119,20 +120,20 @@ body {
 position: relative;
 margin-left: -28%;
 margin-top: 18%;
-width: 90%;
+width: 80%;
 }
 .Milei{
   position: relative;
-  width: 24%;
-  height: 280px;
-  top: 0px;
-  left: 60%;
+  width: 45%;
+  height: 250px;
+  top: 23px;
+  left: 70%;
 }
 
 #headerApertura {
   position: absolute;
-  margin-top: 37%;
-  margin-left: 52%;
+  margin-top: 34%;
+  margin-left: 32%;
   padding: 5px 15px;
   width: 420px;
   text-align: right;
@@ -142,7 +143,6 @@ width: 90%;
   color:white;
   font-size: 60px;
   font-weight: 700;
-  font-family: "PT Sans Demi",sans-serif;
   margin-bottom: 20px;
   width: 140%;
 
@@ -151,33 +151,10 @@ width: 90%;
 #headerApertura p {
   width: 140%;
   font-size: 32px;
-  font-family: "PT Book", sans-serif; /* Fuente "PT Sans" con respaldo sans-serif en caso de que no esté disponible */
   font-style: oblique; /* Aplica el estilo oblicuo (cursiva) */
   color:white;
   font-weight: 500;
 
-}
-
-#slide1 {
-  display: grid;
-  width: 100%;
-  max-width: 1300px;
-  position: relative;
-  grid-template-columns: 1fr,1fr;
-}
-
-#slide1 .header {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  margin-bottom: 20px;
-}
-
-#slide1 .dwMap {
-  position:absolute;
-  top: 200px;
-  left: 400px;
-  width: 500px;
-  height: 500px;
 }
 body {
   display: flex;
@@ -201,7 +178,7 @@ body {
 #grafico{
   height: 40%;
   width: 40%;
-  margin-bottom: 30%;
+  margin-bottom: 33%;
   margin-right: 2%;
 }
 
@@ -222,10 +199,7 @@ body {
   font-size: 30px; /* Tamaño del título */
   font-weight: bold; /* Negrita del título */
   color:white;
-  
 }
-
-
 .texto2 {
   flex: 1;
   text-align: left;
@@ -262,9 +236,9 @@ font-size: x-large;
 }
 #videoApertura {
   position: absolute;
-  top: 100px;
-  left: 100px;
-  width: 300px;
+  top: 140px;
+  left: 220px;
+  width: 850px;
   height: 500px;
   object-fit: cover;
   object-position: top;
@@ -304,7 +278,7 @@ font-size: large;
 .columna2   {
   flex: 1; /* Distribuye el espacio de manera igual entre las columnas */
   padding: 10px; /* Agrega un espacio interior para separar el contenido de las columnas */
-  margin-top: -20px;
+  margin-top: -2px;
   margin-left: 50px;
   text-align: center; /* Centra el contenido dentro de las columnas */
 }
@@ -333,9 +307,9 @@ font-size: larger;
 }
 
 .dwMapp{
-  margin-top: 250px;
+  margin-top: 230px;
   width: 600px;
-  margin-left: 27%;
+  margin-left: 0%;
 }
 #Paid{
 margin-top: 400px;
@@ -347,12 +321,43 @@ margin-left:200px ;
   top: 20px;
 }
 #barras{
-  width: 50%;
-  height: 10%;
-  margin-right: 2%;
-  margin-top: -44%;
+  width: 100%;
+  margin-right: 3%;
+  margin-top: 0%;
 }
 .container .dwMapp{
   margin-top: 250px;
 
+}
+#header h1{
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+
+}
+#header p{
+  text-align: center;
+  color: white;
+  font-size: 23px;
+
+}
+#header2 h1{
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+
+}
+#header2 p{
+  text-align: center;
+  color: white;
+  font-size: 23px;
+
+}
+#header8 h1{
+  color: white;
+  font-size: 30px;
+  font-weight: 550;
+  text-align: center;
 }
