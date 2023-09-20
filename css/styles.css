@@ -24,7 +24,11 @@ body {
   left: 0; /* Alinea la izquierda con el borde izquierdo de la ventana */
   width: 100%; /* Ocupa todo el ancho de la ventana */
   height: 100%; /* Ocupa toda la altura de la ventana */
+  /* overflow: hidden; */
 }
+/* #header5 {
+  position: relative;
+} */
 .fondo{
   position: fixed;
   align-items: center;
@@ -33,7 +37,7 @@ body {
   background-image: url("media/fondo2.png");
   background-size: cover; /* Ajusta la imagen al tamaño de la ventana */
   background-repeat: repeat; /* Evita que la imagen se repita */
-  position: static; /* Establece la posición como absoluta */
+  position: absolute; /* Establece la posición como absoluta */
   top: 0; /* Alinea la parte superior con el borde superior de la ventana */
   left: 0; /* Alinea la izquierda con el borde izquierdo de la ventana */
   width: 100%; /* Ocupa todo el ancho de la ventana */
@@ -160,7 +164,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0;
 }
 
@@ -236,10 +240,10 @@ font-size: x-large;
 }
 #videoApertura {
   position: absolute;
-  top: 140px;
+  top: 130px;
   left: 220px;
-  width: 850px;
-  height: 500px;
+  width: 800px;
+  height: 450px;
   object-fit: cover;
   object-position: top;
 }
@@ -248,7 +252,7 @@ font-size: x-large;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  /* height: 100vh; */
   margin-top: -10%;
 }
 #contenedor3 h1{
@@ -360,4 +364,13 @@ margin-left:200px ;
   font-size: 30px;
   font-weight: 550;
   text-align: center;
+}
+#header5 h1{
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  position:absolute;
+  top: 75px;
+  left: 150px;
 }
